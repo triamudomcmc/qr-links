@@ -13,7 +13,7 @@ const element = (data: any, bname :string) => {
             href={data.link}
             className="rounded-full hover:bg-gray-100 transition-colors text-center w-[250px] py-4 px-8 mt-2 shadow-sm bg-white text-black"
         >
-          {bname}
+          เข้า ZOOM {bname}
         </a>
       </div>
   )
@@ -60,7 +60,7 @@ const Home: NextPage<{ data: any }> = ({ data }) => {
   );
 };
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   // Fetch data from external API
   const data = await getZoomData();
 
