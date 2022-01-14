@@ -17,6 +17,7 @@ const Home: NextPage<{ data: any }> = ({ data }) => {
           <div className="flex flex-col">
             <a
               target="_blank"
+              rel="noreferrer"
               href={data["sci-math"]}
               className="rounded-full hover:bg-gray-100 transition-colors text-center w-[250px] py-4 my-2 px-8 shadow-sm bg-white text-black"
             >
@@ -24,6 +25,7 @@ const Home: NextPage<{ data: any }> = ({ data }) => {
             </a>
             <a
               target="_blank"
+              rel="noreferrer"
               href={data["arts-math"]}
               className="rounded-full hover:bg-gray-100 transition-colors text-center w-[250px] py-4 my-2 px-8 shadow-sm bg-white text-black"
             >
@@ -31,6 +33,7 @@ const Home: NextPage<{ data: any }> = ({ data }) => {
             </a>
             <a
               target="_blank"
+              rel="noreferrer"
               href={data["arts-french"]}
               className="rounded-full hover:bg-gray-100 transition-colors text-center w-[250px] py-4 my-2 px-8 shadow-sm bg-white text-black"
             >
@@ -38,6 +41,7 @@ const Home: NextPage<{ data: any }> = ({ data }) => {
             </a>
             <a
               target="_blank"
+              rel="noreferrer"
               href={data["arts-espanol"]}
               className="rounded-full hover:bg-gray-100 transition-colors text-center w-[250px] py-4 my-2 px-8 shadow-sm bg-white text-black"
             >
@@ -47,6 +51,7 @@ const Home: NextPage<{ data: any }> = ({ data }) => {
           <div className="flex flex-col">
             <a
               target="_blank"
+              rel="noreferrer"
               href={data["arts-deutsch"]}
               className="rounded-full hover:bg-gray-100 transition-colors text-center w-[250px] py-4 my-2 px-8 shadow-sm bg-white text-black"
             >
@@ -54,6 +59,7 @@ const Home: NextPage<{ data: any }> = ({ data }) => {
             </a>
             <a
               target="_blank"
+              rel="noreferrer"
               href={data["arts-japan"]}
               className="rounded-full hover:bg-gray-100 transition-colors text-center w-[250px] py-4 my-2 px-8 shadow-sm bg-white text-black"
             >
@@ -61,6 +67,7 @@ const Home: NextPage<{ data: any }> = ({ data }) => {
             </a>
             <a
               target="_blank"
+              rel="noreferrer"
               href={data["arts-korean"]}
               className="rounded-full hover:bg-gray-100 transition-colors text-center w-[250px] py-4 my-2 px-8 shadow-sm bg-white text-black"
             >
@@ -68,6 +75,7 @@ const Home: NextPage<{ data: any }> = ({ data }) => {
             </a>
             <a
               target="_blank"
+              rel="noreferrer"
               href={data["arts-chinese"]}
               className="rounded-full hover:bg-gray-100 transition-colors text-center w-[250px] py-4 my-2 px-8 shadow-sm bg-white text-black"
             >
