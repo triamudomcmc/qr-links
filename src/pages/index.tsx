@@ -1,23 +1,23 @@
 import type { NextPage } from "next";
 import { getZoomData } from "src/lib/db-admin";
 
-const element = (data: any, bname :string) => {
-    console.log(data)
+const element = (data: any, bname: string) => {
+  console.log(data);
   return (
-      <div className="flex flex-col bg-gray-300 rounded-lg px-4 bg-white text-black py-2">
-        <h1>ID: {data.id}</h1>
-        <h1>Password: {data.password}</h1>
-        <a
-            target="_blank"
-            rel="noreferrer"
-            href={data.link}
-            className="rounded-full hover:bg-gray-100 transition-colors text-center w-[250px] py-4 px-8 mt-2 shadow-sm bg-white text-black"
-        >
-          {bname}
-        </a>
-      </div>
-  )
-}
+    <div className="flex flex-col bg-gray-300 rounded-lg px-4 bg-white text-black py-2">
+      <h1>ID: {data.id}</h1>
+      <h1>Password: {data.password}</h1>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href={data.link}
+        className="rounded-full hover:bg-gray-100 transition-colors text-center w-[250px] py-4 px-8 mt-2 shadow-sm bg-white text-black"
+      >
+        {bname}
+      </a>
+    </div>
+  );
+};
 const Home: NextPage<{ data: any }> = ({ data }) => {
   if (!data)
     return (
@@ -36,12 +36,12 @@ const Home: NextPage<{ data: any }> = ({ data }) => {
               <h1>ID: {data["sci-math"].id}</h1>
               <h1>Password: {data["sci-math"].password}</h1>
               <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href={data["sci-math"].link}
-                  className="rounded-full hover:bg-gray-100 transition-colors text-center w-[250px] py-4 px-8 mt-2 shadow-sm bg-white text-black"
+                target="_blank"
+                rel="noreferrer"
+                href={data["sci-math"].link}
+                className="rounded-full hover:bg-gray-100 transition-colors text-center w-[250px] py-4 px-8 mt-2 shadow-sm bg-white text-black"
               >
-                วิทย์-คณิต
+                เข้า ZOOM วิทย์-คณิต
               </a>
             </div>
             {element(data["arts-math"], "ศิลป์คำนวณ")}
